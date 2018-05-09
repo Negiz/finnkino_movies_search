@@ -17,3 +17,8 @@ How it works?
 11. information->frame->bigger frame->canvas->mainframe
 12. Combobox's city value decides which movies are shown when user click "OK" button
 
+Problems
+-frame sizes are decided by the widest element. Sometimes this can create problem with some elements going of the screen.
+-> could have added a horizontal slide
+-Could have added more functions. I tried to add to a movieframe function which opens a tab in browser and shows the movie in Finnkino site.
+-Not much customization done, this is pretty dull looking gui.
