@@ -179,7 +179,7 @@ class App(Tk):
         #If one wants scrollable element one have to create a frame in which one puts canvas and then into canvas one puts a frame.
         #Frame -> Canvas -> Frame 
         #Scrollbar will be put in the first Frame (mainframe) and it will interact with canvas.
-        canvas = Canvas(container, width =1230, height = 700)
+        canvas = Canvas(container, width =1130, height = 700)
         frame_to_canvas = Frame(canvas)
         
         #this things are somesort of black magic.
@@ -192,7 +192,7 @@ class App(Tk):
         
         #the scrollregion contains all that is in canvas
         def scrollfunction(event):
-            canvas.configure(scrollregion=canvas.bbox("all"),width=1230,height=700)
+            canvas.configure(scrollregion=canvas.bbox("all"),width=1130,height=700)
         
         #Scrolling with mousewheel. -1 so that scrolling down brings canvas down.
         #int is needed probably due to pixels. There is no half a pixel?
@@ -224,7 +224,7 @@ lines = re.findall('<Show>.*?</Show>', resp_data.decode(), re.DOTALL)
 elokuva_titlet = []
 elokuva_dict = {}
 #how many per row will be put in canvas (actually to frame in canvas)
-elokuva_rivilkm = 5
+elokuva_rivilkm = 4
 
 #font for button and combobox
 LARGE_FONT = ("Verdana", 12)
