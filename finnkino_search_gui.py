@@ -87,7 +87,7 @@ class App(Tk):
                 
                 child.destroy()
             
-            #savings
+            #saving info's if city is in the <Show> tag
             for x in range(0, (len(lines))):
                 if(city in lines[x]):
                     city_list.append(lines[x])
